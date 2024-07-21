@@ -1,8 +1,4 @@
 {
-
-  "homepage": "https://avi4803.github.io/Todo-notes",
-   "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
   "name": "redux",
   "private": true,
   "version": "0.0.0",
