@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '700px', // Custom value for 'sm'
+        'sm': '640px', // Custom value for 'sm'
         'md': '768px', // Custom value for 'md'
       },
 
