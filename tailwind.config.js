@@ -6,7 +6,13 @@ export default {
   ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sm': '640px', // Custom value for 'sm'
+        'md': '768px', // Custom value for 'md'
+      },
+
+    },
   },
   plugins: [],
 }
