@@ -1,4 +1,8 @@
 {
+
+  "homepage": "https://avi4803.github.io/Todo-notes",
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
   "name": "redux",
   "private": true,
   "version": "0.0.0",
@@ -11,6 +15,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2"
