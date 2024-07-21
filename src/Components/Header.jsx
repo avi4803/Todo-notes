@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { addTodo } from "../Features/Todo/TodoSlice";
-import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import profilePic from '../assets/DP.jpg';
 
 function Header() {
   const dispatch = useDispatch(); // Call useDispatch at the top level
@@ -65,7 +65,7 @@ function Header() {
         <div className="h-36 w-1/2 bg-indigo-200 m-10 min-w-96 rounded-3xl items-center ">
           <div className="flex flex-row justify-start">
             <img
-              src="src/assets/DP.jpg"
+              src={profilePic}
               className="self-center size-20 rounded-full mx-3 block md:size-28 md:mx-6"
             ></img>
 
