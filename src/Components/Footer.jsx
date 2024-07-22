@@ -87,7 +87,7 @@ const BasicNote = ({ text, noteId, creationTime }) => {
   return (
     <>
       <div className="lg:self-center ">
-        <div className=" dark:bg-indigo-900 dark:text-gray-200 bg-indigo-100 rounded-2xl p-6 mx-10 text-sm flex justify-evenly  hover:shadow-lg  lg:min-w-[950px] ">
+        <div className=" dark:bg-indigo-900 dark:text-gray-200 bg-indigo-100 rounded-2xl p-6 mx-10 text-sm flex justify-evenly  hover:shadow-lg  lg:min-w-[950px] lg:max-w-80">
           <input
             type="checkbox"
             id="custom-checkbox"
@@ -130,7 +130,7 @@ function Footer() {
 
   return (
     <>
-      <div className="flex flex-col w-full min-h-[24.7em] my-6 rounded-t-[50px] md:rounded-t-[100px] gap-4">
+      <div className="flex flex-col w-full min-h-[45vh] md:min-h-[51vh] my-6 rounded-t-[50px] md:rounded-t-[100px] gap-4">
         {todos.map((todo) => (
           <BasicNote
             key={todo.id}

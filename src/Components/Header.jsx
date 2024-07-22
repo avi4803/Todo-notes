@@ -38,24 +38,47 @@ function Header() {
     year: "numeric",
   });
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      handleInputSubmit(e);
+    }
+  };
+
   return (
     <>
       {/* //Popup handler for add todo start// */}
       {isTextBoxVisible && (
-        <form onSubmit={handleInputSubmit} className="relative  flex">
-          <input
-            type="text"
-            value={inputValue}
-            onChange={handleInputChange}
-            className="px-4 py-2 border border-gray-300 rounded w-full"
-            placeholder="Enter your todo"
-          />
-          <button
-            type="submit"
-            className="mt-2 px-4 py-2 bg-green-500 text-white rounded"
-          >
-            Submit
-          </button>
+        <form
+          className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 backdrop-blur-sm"
+          onKeyDown={handleKeyPress}
+        >
+          <div className="bg-indigo-200 p-6 rounded-2xl shadow-lg shadow-gray-700  min-w-[20vw]">
+            <div className="flex justify-between">
+              <h1 className="my-2 text-xl font-light">Add your note</h1>
+              <button
+                onClick={() => setIsTextBoxVisible(false)}
+                className="hover:ring-2 hover:ring-gray-500 size-6 text-center  place-self-center rounded-sm"
+              >
+                x
+              </button>
+            </div>
+
+            <input
+              type="text"
+              value={inputValue}
+              onChange={handleInputChange}
+              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            />
+            <div className="flex justify-end">
+              <button
+                onClick={handleInputSubmit}
+                type="submit"
+                className="mt-3 px-5 py-2 bg-green-500 text-white rounded-lg hover:bg-green-400"
+              >
+                Ok
+              </button>
+            </div>
+          </div>
         </form>
       )}
 

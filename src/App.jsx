@@ -4,10 +4,9 @@ import Header from "./Components/Header";
 import Mid from "./Components/Mid";
 import Footer from "./Components/Footer";
 import { useEffect } from "react";
+import Button from "./Components/Button";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   //dark mode //
   const [darkMode, setDarkMode] = useState(true);
   console.log(darkMode);
@@ -51,11 +50,17 @@ function App() {
         {/* <input type='text' className='h-10 w-1/3 bg-slate-800 my-24 min-w-80 rounded-lg p-6 text-white'>
 </input> */}
 
-        <div className="flex w-full justify-evenly h-full my-10 bg-indigo-200 rounded-t-[50px] md:rounded-t-[100px] ">
+        <div className="flex w-full justify-evenly  my-10  bg-indigo-200 rounded-t-[50px] md:rounded-t-[100px] ">
           <Footer />
           
         </div>
-        
+
+        <div>
+
+
+
+          
+        </div>
       </div>
     </>
   );
