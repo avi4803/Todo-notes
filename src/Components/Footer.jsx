@@ -33,7 +33,7 @@ const BasicNote = ({ text, noteId, creationTime }) => {
             <input
                 type="text"
                 value="${text}"
-                class="outline-none bg-orange-200 rounded-lg px-2 py-1 max-w-full"
+                class="outline-none bg-inherit rounded-lg px-2 py-1 max-w-full"
             />
         `;
       const input = note.querySelector("input");
@@ -87,7 +87,7 @@ const BasicNote = ({ text, noteId, creationTime }) => {
   return (
     <>
       <div className="lg:self-center ">
-        <div className=" bg-orange-200  rounded-2xl p-6 mx-10 text-sm flex justify-evenly  hover:shadow-lg  lg:min-w-[950px] ">
+        <div className=" dark:bg-indigo-900 dark:text-gray-200 bg-indigo-100 rounded-2xl p-6 mx-10 text-sm flex justify-evenly  hover:shadow-lg  lg:min-w-[950px] ">
           <input
             type="checkbox"
             id="custom-checkbox"
@@ -97,21 +97,21 @@ const BasicNote = ({ text, noteId, creationTime }) => {
           />
           <div className="w-3/5">
             {creationTime}
-            <div id={noteId} className="text-2xl break-words">
+            <div id={noteId} className="text-2xl break-words font-mono">
               {text}
             </div>
           </div>
           <div className="flex">
             <button
               onClick={() => handleEdit(noteId)}
-              className="border border-gray-500 hover:border-none min-h-10 place-self-center cursor-pointer px-2 m-2 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="border dark:text-white border-gray-500 hover:border-none min-h-10 place-self-center cursor-pointer px-2 m-2 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
             >
               Edit
             </button>
             <button
               onClick={() => dispatch(removeTodo(noteId))}
-              className="border border-gray-500 hover:border-none min-h-10 place-self-center cursor-pointer px-2 m-2 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              className="border dark:text-white border-gray-500 hover:border-none min-h-10 place-self-center cursor-pointer px-2 m-2 py-2 font-sans text-xs font-bold text-center text-gray-900 uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
               type="button"
             >
               Delete

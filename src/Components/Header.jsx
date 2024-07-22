@@ -62,7 +62,7 @@ function Header() {
       {/* //Popup handler for add todo end// */}
 
       <div className="w-full h-full flex flex-row justify-center p">
-        <div className="h-36 w-1/2 bg-indigo-200 m-10 min-w-96 rounded-3xl items-center ">
+        <div className="h-36 w-1/2 bg-indigo-300 m-10 min-w-96 rounded-3xl items-center ">
           <div className="flex flex-row justify-start">
             <img
               src={profilePic}

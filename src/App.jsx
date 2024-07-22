@@ -41,7 +41,7 @@ function App() {
 
     {/* Toogle bar for dark mode  end*/}
 
-      <div className=" dark:bg-indigo-900 duration-300 bg-indigo-400 h-screen flex flex-col">
+      <div className=" dark:bg-indigo-950 duration-300 bg-indigo-400 h-screen flex flex-col">
         <div>
           <Header />
         </div>
