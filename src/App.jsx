@@ -4,7 +4,7 @@ import Header from "./Components/Header";
 import Mid from "./Components/Mid";
 import Footer from "./Components/Footer";
 import { useEffect } from "react";
-import Button from "./Components/Button";
+
 
 function App() {
   //dark mode //

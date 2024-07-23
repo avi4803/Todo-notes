@@ -7,7 +7,8 @@ function Mid() {
   const completedTasks = todos.filter((todo) => todo.completed).length;
 
   return (
-    <div className="min-w-96 w-1/2 h-20 flex justify-evenly  gap-8 md:h-36">
+    
+    <div className="min-w-96 w-1/2  h-20 flex  justify-evenly  gap-8 md:h-36" >
       <div className="w-2/3 h-full  rounded-2xl dark:bg-midnight2  dark:text-black bg-indigo-800 md:bg-indigo-700 text-gray-300 items-center flex justify-start shadow-md shadow-gray-900 font-light">
         <div className=" hidden h-1/2 w-20 mx-5 bg-indigo-950 shadow-md shadow-black rounded-2xl md:grid md:grid-rows-2  text-white font-thin">
           <div className="text-4xl text-center p-2">{new Date().getDate()}</div>
@@ -15,8 +16,8 @@ function Mid() {
             {new Date().toLocaleString("default", { month: "long" })}
           </div>
         </div>
-        <div className="hidden text-center  font- p-2 text-3xl md:block ">
-          {tasks - completedTasks} task left for today
+        <div className="hidden font-thin p-3 text-3xl  md:block min-w-[15vw]">
+        {tasks - completedTasks} task left for today
         </div>
         <div className="flex flex-col justify-evenly m-4 md:hidden">
           <div className=" ">Tasks left today</div>
@@ -27,7 +28,7 @@ function Mid() {
         <div className=" hidden h-1/2 w-20 mx-5 bg-indigo-950  shadow-md shadow-black text-white rounded-2xl md:grid md:grid-rows-2 font-thin">
           <div className="text-4xl text-center p-4">{completedTasks}</div>
         </div>
-        <div className="hidden text-center  font- p-2 text-3xl md:block">
+        <div className="hidden     font-thin p-2 text-3xl md:block min-w-[15vw]">
         {completedTasks} task completed
         </div>
         <div className="flex flex-col justify-evenly m-4 md:hidden">
@@ -36,6 +37,7 @@ function Mid() {
         </div>
       </div>
     </div>
+    
   );
 }
 

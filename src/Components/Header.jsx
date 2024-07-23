@@ -84,16 +84,16 @@ function Header() {
 
       {/* //Popup handler for add todo end// */}
 
-      <div className="w-full h-full flex flex-row justify-center p">
-        <div className="h-36 w-1/2 bg-indigo-300 m-10 min-w-96 rounded-3xl items-center ">
-          <div className="flex flex-row justify-start">
+      <div className="w-full h-full flex flex-row justify-center ">
+        <div className="h-36 w-1/2 bg-indigo-300 m-10 min-w-96 rounded-3xl items-center">
+          <div className="flex flex-row justify-start  ">
             <img
               src={profilePic}
-              className="self-center size-20 rounded-full mx-3 block md:size-28 md:mx-6"
+              className="self-center size-20 rounded-full mx-3 block lg:size-28 md:mx-6"
             ></img>
 
-            <div className="my-8 border-slate-950 border rounded-lg p-4 md:my-6">
-              <div className="text-2xl max-h-80 md:text-3xl">Hey,{user}</div>
+            <div className="my-8 border-slate-950 border rounded-lg py-4 px-3 md:my-6">
+              <div className="text-2xl max-h-80 lg:text-3xl">Hey,{user}</div>
               <div className="text-sm md:text-xl ">{formattedDate}</div>
             </div>
             <div className="w-full flex justify-center md:justify-end md:m-6">
@@ -107,6 +107,7 @@ function Header() {
           </div>
         </div>
       </div>
+     
     </>
   );
 }
