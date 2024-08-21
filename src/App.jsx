@@ -4,9 +4,12 @@ import Header from "./Components/Header";
 import Mid from "./Components/Mid";
 import Footer from "./Components/Footer";
 import { useEffect } from "react";
+import conf from "./conf/conf";
 
 
 function App() {
+ 
+ 
   //dark mode //
   const [darkMode, setDarkMode] = useState(true);
   console.log(darkMode);
